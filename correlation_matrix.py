@@ -7,7 +7,8 @@ import csv, sys
 # X : matrix, each row is an array of m instances of a single feature
 # if 'train': formats features and plots correlation matrix;
 # if 'test' : formats features; exits;
-filename = 'test.csv'
+#filename = 'test.csv'
+filename = 'train.csv'
 with open(filename, 'rb') as csvfile:
   data = csv.reader(csvfile, delimiter=',')
   X = [row for row in data]
